@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: #f6f6f6;
+}
+/* -----------head nav----------- */
+nav{
+    background-color: #222;
+    padding:12px 100px;
+}
+.nav-tag a{
+    padding: 20px;
+    text-decoration: none;
+    color: #919191;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .3s;
+}
+.nav-tag a:hover{
+    color: #2F4F4F;
+    border-bottom: #2F4F4F solid 2px;
+}
+.nav-tag #home{
+    color: #2F4F4F;
+    border: #2F4F4F 1px solid;
+    border-radius: 5px;
+    background-color: #222;
+    padding: 7px 14px;
+    transition: .3s;
+}
+.nav-tag #home:hover{
+    background-color: #039c9c;
+    color: white;
+}
+/* ---------end code nav-tag-------- */
+/*---------- container-------------- */
+.top-container{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.showcase{
+    background: linear-gradient(200deg,rgba(0,0,0,0.1),#217a7a),url(../img/section-img.jpg);
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    background-position: fixed;
+    border-radius: 6px;
+
+}
+.showcase h2{
+    padding: 100px;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: #000 1px 1px 2px;
+}
+.showcase h2 span{
+    color: #FFE4B5;
+    font-size: 0.8rem;
+    display: flex;
+    letter-spacing: 1.5px;
+}
+/*----------- case Sign up ------ */
+form{
+    padding: 60px;
+}
+fieldset{
+    background-color: #f6f6f6;
+    padding: 30px;
+    border: none;
+    border-radius: 7px;
+    height: 500px;
+    box-shadow: #2F4F4F 2px  5px 6px;
+    transition: .3s;
+}
+fieldset:hover{
+    box-shadow: #2F4F4F 2px 5px 6px;
+}
+legend{
+    text-align: center;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    background-color: #217a7a;
+    color: #fff;
+}
+label{
+    font-size: 1rem;
+    font-family: monospace;
+}
+input{
+    padding: 10px 100px;
+    margin: 20px;
+}
+input[type]{
+    background-color: #f4f4f4;
+    border: 0.3px solid #000;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.contact-form-text:focus{
+    box-shadow: 2px 2px 8px #000;
+    /* border: none; */
+    transition: .4s;
+}
+.btn{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #217a7a;
+    font-size: 1rem;
+    min-width: 200px;
+    cursor: pointer;
+    transition: .4s;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #2a8c8c;
+    box-shadow: #000 1px 2px 7px;
+}
+
+/* ---------end la cese ------------ */
+
+/* -----FOOTER----- */
+.footerHere{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: minmax(100px);
+    background-color: #222;
+}
+.leftfoot{
+    margin: 10px;
+    padding: 10px;
+}
+.leftfoot h3{
+    color: #aaa;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-size: 23px;
+}
+.leftfoot p{
+    color: #fff;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.leftfoot p span{
+    transition: .4s;
+    cursor: pointer;
+}
+.leftfoot p span:hover{
+    color: #019587;
+    padding: 10px;
+}
+.rightfoot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.rightfoot .feature-icon{
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.feature-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #019587;
+    border: #019587 solid 1px;
+    transition: .4s;
+}
+
+.feature-icon .fa:hover{
+    color: #fff;
+    width: 80px;
+}
+.feature-icon .fa-facebook:hover{
+    background-color: rgb(23, 107, 185);
+    border: rgb(23, 107, 185) 1px solid;
+}
+.feature-icon .fa-whatsapp:hover{
+    background-color: rgb(22, 192, 67);
+    border:  1px solid  rgb(22, 192, 67);
+}
+.feature-icon .fa-instagram:hover{
+    background: linear-gradient(20deg,rgb(225, 102, 8),magenta);
+    border: 1px solid purple;
+}
